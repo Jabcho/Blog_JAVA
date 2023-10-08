@@ -15,3 +15,7 @@ spring:
   h2:
     console:
       enabled: true
+
+jwt:
+  issuer: yunsuu0220@gmail.com
+  secret_key: jabcho

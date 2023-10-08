@@ -18,6 +18,7 @@ public class UserApiController {
 
     @PostMapping("/user")
     public String signup(AddUserRequest request) {
+        System.out.println("새로운 이메일은 : " + request.getEmail());
         userService.save(request);
         return "redirect:/login";
     }

@@ -26,6 +26,8 @@ public class BlogApiController {
                 .body(savedArticle);
     }
 
+    /* BlogViewController에서 대신 처리 */
+    /*
     @GetMapping("/articles")
     public ResponseEntity<List<ArticleResponse>> findAllArticles() {
         List<ArticleResponse> articles = blogService.findAll()
@@ -33,9 +35,13 @@ public class BlogApiController {
                 .map(ArticleResponse::new)
                 .toList();
 
+
         return ResponseEntity.status(HttpStatus.OK).body(articles);
     }
+    */
 
+    /* BlogViewController에서 대신 처리 */
+    /*
     @GetMapping("/articles/{id}")
     public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id) {
         Article article = blogService.findById(id);
@@ -43,6 +49,7 @@ public class BlogApiController {
         return ResponseEntity.ok()
                 .body(new ArticleResponse(article));
     }
+    */
 
     @DeleteMapping("/articles/{id}")
     public ResponseEntity<Void> deleteArticle(@PathVariable long id) {
