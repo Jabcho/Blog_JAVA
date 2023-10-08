@@ -5,7 +5,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 **/application.yml
-.pptx
 
 ### STS ###
 .apt_generated
